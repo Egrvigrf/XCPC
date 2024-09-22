@@ -11,8 +11,12 @@
             "id": "188ad8bd6023052a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "模板/打印稿.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "模板/打印稿.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "模板/打印稿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "模板/打印稿.md"
+              }
             }
           }
         ],
@@ -139,9 +147,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "188ad8bd6023052a",
+  "active": "b4d06db632ed9e35",
   "lastOpenFiles": [
+    "模板/vscode/setting.json",
+    "模板/vscode/cpp.json",
+    "模板/vscode",
+    "笔记/数论/快速幂.md",
+    "笔记/数论/素数.md",
+    "笔记/数论/同余定理.md",
     "模板/打印稿.md",
+    "笔记/字符串/字符串哈希.md",
     "笔记/其他/二分答案.md",
     "笔记/基础.md",
     "笔记/数据结构/树状数组.md",
@@ -156,17 +171,12 @@
     "笔记/数据结构/单调栈.md",
     "笔记/数据结构/单调队列.md",
     "笔记/数据结构/并查集.md",
-    "笔记/数论/快速幂.md",
     "笔记/数据结构/树/基础.md",
     "模板/快读.md",
     "模板/login.md",
     "模板/i128.md",
     "笔记/搜索/DFS.md",
     "笔记/搜索/BFS.md",
-    "笔记/搜索/洪水填充.md",
-    "笔记/字符串/字符串哈希.md",
-    "题解/DP/二叉树数目.md",
-    "笔记/DP/DP.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",
@@ -176,8 +186,6 @@
     "笔记/图论",
     "笔记/贪心",
     "笔记/搜索",
-    "笔记/数论",
-    "笔记/其他",
     "笔记/算法/搜索/graph1.gif",
     "未命名.canvas",
     "未命名 1.canvas"
