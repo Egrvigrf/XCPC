@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "b66389dae3ae62a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ab04330e4e82db2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29d7cf85b202f47f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模板/快读.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb3dd99a3623fcda",
+    "type": "split",
+    "children": [
+      {
+        "id": "2bbfc18ff2d448a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4d06db632ed9e35",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0ffc207404636d44",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "拓扑",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e643b08785766baf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 312.5
+  },
+  "right": {
+    "id": "5a40f2e27bf1dc56",
+    "type": "split",
+    "children": [
+      {
+        "id": "798eb218f6230a63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16b279580e20fee6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "模板/快读.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9c826c66458d83c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "模板/快读.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "71dc14be9e037410",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6aacb2fdc39ea1ba",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "模板/快读.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "29d7cf85b202f47f",
+  "lastOpenFiles": [
+    "模板/合集.md",
+    "笔记/搜索/DFS.md",
+    "笔记/搜索/BFS.md",
+    "笔记/搜索/洪水填充.md",
+    "笔记/字符串/字符串哈希.md",
+    "模板/login.md",
+    "题解/DP/二叉树数目.md",
+    "模板/快读.md",
+    "笔记/DP/DP.md",
+    "笔记/博弈/组合博弈.md",
+    "笔记/数论/同余定理.md",
+    "笔记/数论/快速幂.md",
+    "笔记/数论/素数.md",
+    "笔记/数论/线性丢番图方程解的存在性.md",
+    "笔记/数论/最大公约数.md",
+    "题解/树/Maximize the Root.md",
+    "题解/树/最长可能路径.md",
+    "题解/差分前缀和/最强祝福力场.md",
+    "题解/差分前缀和/用邮票贴满网格图.md",
+    "笔记/警告.md",
+    "笔记/基础.md",
+    "笔记/排序/堆排序.md",
+    "笔记/图论/建图.md",
+    "笔记/DP/状压DP.md",
+    "笔记/图论/最短路/SPFA.md",
+    "笔记/图论/最小生成树.md",
+    "笔记/搜索/graph1.gif",
+    "题解/DP/未命名",
+    "笔记/字符串",
+    "笔记/图论/最短路",
+    "笔记/图论/二分图",
+    "笔记/图论/拓扑排序",
+    "笔记/图论",
+    "笔记/贪心",
+    "笔记/搜索",
+    "笔记/数论",
+    "笔记/其他",
+    "笔记/算法/搜索/graph1.gif",
+    "未命名.canvas",
+    "未命名 1.canvas"
+  ]
+}
