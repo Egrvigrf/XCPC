@@ -149,6 +149,7 @@
   },
   "active": "b4d06db632ed9e35",
   "lastOpenFiles": [
+    "题解/差分前缀和/昵称检索.md",
     "模板/vscode/setting.json",
     "模板/vscode/cpp.json",
     "模板/vscode",
@@ -185,7 +186,6 @@
     "笔记/图论/拓扑排序",
     "笔记/图论",
     "笔记/贪心",
-    "笔记/搜索",
     "笔记/算法/搜索/graph1.gif",
     "未命名.canvas",
     "未命名 1.canvas"
