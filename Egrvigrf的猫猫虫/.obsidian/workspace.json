@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3ab04330e4e82db2",
+        "id": "2bc77d0c80ff8930",
         "type": "tabs",
         "children": [
           {
-            "id": "29d7cf85b202f47f",
+            "id": "188ad8bd6023052a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/快读.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/快读.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/快读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "模板/快读.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,34 +139,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "29d7cf85b202f47f",
+  "active": "188ad8bd6023052a",
   "lastOpenFiles": [
-    "模板/合集.md",
+    "模板/打印稿.md",
+    "笔记/其他/二分答案.md",
+    "笔记/基础.md",
+    "笔记/数据结构/树状数组.md",
+    "笔记/贪心/greedy.md",
+    "模板/对拍/compare.md",
+    "模板/对拍/random_number_generator.md",
+    "笔记/博弈/组合博弈.md",
+    "笔记/DP/背包DP.md",
+    "笔记/DP/状压DP.md",
+    "笔记/排序/插入排序.md",
+    "笔记/数据结构/堆.md",
+    "笔记/数据结构/单调栈.md",
+    "笔记/数据结构/单调队列.md",
+    "笔记/数据结构/并查集.md",
+    "笔记/数论/快速幂.md",
+    "笔记/数据结构/树/基础.md",
+    "模板/快读.md",
+    "模板/login.md",
+    "模板/i128.md",
     "笔记/搜索/DFS.md",
     "笔记/搜索/BFS.md",
     "笔记/搜索/洪水填充.md",
     "笔记/字符串/字符串哈希.md",
-    "模板/login.md",
     "题解/DP/二叉树数目.md",
-    "模板/快读.md",
     "笔记/DP/DP.md",
-    "笔记/博弈/组合博弈.md",
-    "笔记/数论/同余定理.md",
-    "笔记/数论/快速幂.md",
-    "笔记/数论/素数.md",
-    "笔记/数论/线性丢番图方程解的存在性.md",
-    "笔记/数论/最大公约数.md",
-    "题解/树/Maximize the Root.md",
-    "题解/树/最长可能路径.md",
-    "题解/差分前缀和/最强祝福力场.md",
-    "题解/差分前缀和/用邮票贴满网格图.md",
-    "笔记/警告.md",
-    "笔记/基础.md",
-    "笔记/排序/堆排序.md",
-    "笔记/图论/建图.md",
-    "笔记/DP/状压DP.md",
-    "笔记/图论/最短路/SPFA.md",
-    "笔记/图论/最小生成树.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",

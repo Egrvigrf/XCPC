@@ -28,7 +28,7 @@ int main() {
 }
 
 /*
-ifstream input_file("random_test.txt");  // 重定向输入和输出
+ifstream input_file("randomtest.txt");  // 重定向输入和输出
 ofstream output_file("correct.txt");
 cin.rdbuf(input_file.rdbuf());  // 替换标准输入输出流
 cout.rdbuf(output_file.rdbuf());
