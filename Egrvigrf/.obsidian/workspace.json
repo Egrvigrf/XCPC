@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "efdccc63ab77005c",
+        "id": "a5103de7e8768ca5",
         "type": "tabs",
         "children": [
           {
-            "id": "09847ca3af7bcddd",
+            "id": "c3d66d09d7e6f437",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "题解/贪心/Longest Max Min Subsequence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "题解/贪心/Longest Max Min Subsequence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "题解/贪心/Longest Max Min Subsequence.md"
+              }
             }
           }
         ],
@@ -141,6 +145,7 @@
   },
   "active": "b4d06db632ed9e35",
   "lastOpenFiles": [
+    "题解/贪心/Longest Max Min Subsequence.md",
     "题解/DP/二叉树数目.md",
     "题解/DP/不同子序列.md",
     "题解/DP/编辑距离.md",
@@ -170,7 +175,6 @@
     "笔记/DP/状压DP.md",
     "笔记/排序/插入排序.md",
     "笔记/数据结构/堆.md",
-    "笔记/数据结构/单调栈.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",
