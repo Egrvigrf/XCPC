@@ -85,3 +85,131 @@ for (int i = 1; i <= n; i++) {
 }
 ```
 - [P1507 NASA的食物计划](https://www.luogu.com.cn/problem/P1507)
+
+# 分组背包
+[通天之分组背包](https://www.luogu.com.cn/problem/P1757)
+每个物品属于一个组，每组物品只能选一个
+转换为0-1背包，对于一组内的每个物品，枚举选哪个或者不选的最大值
+
+
+```cpp
+const int N = 1010;
+struct node {
+    int w,v,id;
+} a[N];
+ll dp[N][N];
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    int m,n;
+    cin >> m >> n;
+    for(int i = 1; i <= n; i++) {
+        cin >> a[i].w >> a[i].v >> a[i].id;
+    }
+    sort(a+1,a+n+1,[](node x,node y) { return x.id < y.id;});
+    int team = 1;
+    for(int i = 1; i < n; i++) {
+        if(a[i].id != a[i+1].id) team++; 
+    }
+    for(int i = 0; i <= team; i++) {
+        for(int j = 0; j <= m; j++) {
+            dp[i][j] = 0;
+        }
+    }
+    for(int st = 1,ed = 2,i = 1; st <= n && i <= team; i++) {
+        while(ed <= n && a[ed].id == a[st].id) {
+            ed++;
+        }
+        for(int j = 1; j <= m; j++) {
+            dp[i][j] = dp[i-1][j];
+            for(int k = st; k < ed; k++) {
+                if(j >= a[k].w) {
+                    dp[i][j] = max(dp[i][j], dp[i - 1][j - a[k].w] + a[k].v);
+                }
+            }
+        }
+        st = ed++;
+    }
+    cout << dp[team][m]<<endl;
+    return 0;
+}   /* created: 2024-09-27 19:44 author: Egrvigrf */
+```
+
+# 空间压缩
+```cpp
+const int N = 1010;
+struct node {
+    int w,v,id;
+} a[N];
+ll dp2[N];
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    int m,n;
+    cin >> m >> n;
+    for(int i = 1; i <= n; i++) {
+        cin >> a[i].w >> a[i].v >> a[i].id;
+    }
+    sort(a+1,a+n+1,[](node x,node y) { return x.id < y.id;});
+    int team = 1;
+    for(int i = 1; i < n; i++) {
+        if(a[i].id != a[i+1].id) team++; 
+    }
+    for(int i = 0; i <= m; i++) {
+        dp2[i] = 0;
+    }
+    for (int st = 1, ed = 2, i = 1; st <= n && i <= team; i++) {
+        while (ed <= n && a[ed].id == a[st].id) {
+            ed++;
+        }
+        for (int j = m; j >= 1; j--) {
+            for (int k = st; k < ed; k++) {
+                if (j >= a[k].w) {
+                    dp2[j] = max(dp2[j], dp2[j - a[k].w] + a[k].v);
+                }
+            }
+        }
+        st = ed++;
+    }
+    cout<<dp2[m]<<endl;
+    return 0;
+}   /* created: 2024-09-27 19:44 author: Egrvigrf */
+```
+
+多重背包 二进制优化
+时间复杂度O(背包容量\*log物品总数)
+打包成多组后跑一遍0-1背包
+```cpp
+const int N = 4e4 + 10;
+int dp[N];
+int v[N];
+int w[N];
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    int n,W;
+    cin >> n >> W;
+    int cnt = 1;
+    for(int i = 1; i <= n; i++) {
+        int v0,w0,m0;
+        cin >> v0 >> w0 >> m0;
+        int k = 1;
+        while(k <= m0) {
+            w[cnt] = w0*k;
+            v[cnt++] = v0*k;    
+            m0 -= k;
+            k *= 2;
+        }
+        if(m0 > 0) {
+            w[cnt] = m0 * w0;
+            v[cnt++] = m0 * v0;
+        }        
+    }
+    for(int i = 0; i < cnt; i++) dp[i] = 0;
+    for(int i = 1; i < cnt; i++) {
+        for(int j = W; j >= w[i]; j--) {
+            dp[j] = max(dp[j],dp[j-w[i]] + v[i]);
+        }
+    }
+    cout<<dp[W]<<endl;
+    return 0;
+}   /* created: 2024-09-27 20:57 author: Egrvigrf */
+```
+
