@@ -134,7 +134,7 @@ int main() {
 }   /* created: 2024-09-27 19:44 author: Egrvigrf */
 ```
 
-# 空间压缩
+## 空间压缩
 ```cpp
 const int N = 1010;
 struct node {
@@ -174,7 +174,8 @@ int main() {
 }   /* created: 2024-09-27 19:44 author: Egrvigrf */
 ```
 
-多重背包 二进制优化
+# 多重背包 二进制优化
+[P1776 宝物筛选](https://www.luogu.com.cn/problem/P1776)
 时间复杂度O(背包容量\*log物品总数)
 打包成多组后跑一遍0-1背包
 ```cpp
@@ -213,3 +214,113 @@ int main() {
 }   /* created: 2024-09-27 20:57 author: Egrvigrf */
 ```
 
+#  混合背包
+[# P1833 樱花](https://www.luogu.com.cn/problem/P1833)
+里面的物品可以选无限次也可以选k次
+组合一下多重背包和完全背包
+```cpp
+const int N = 1e4 + 10;
+int dp[N];
+const int M = 1e6;
+int w[M];
+int v[M];
+bool complete[M];
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    string s1, s2;
+    int n;
+    cin >> s1 >> s2 >> n;
+    int W = conv(s1, s2);
+    int cnt = 1;
+    for (int i = 1; i <= n; i++) {
+        int w0, v0, p0;
+        cin >> w0 >> v0 >> p0;
+        if (p0 == 0) {
+            complete[cnt] = true;
+            w[cnt] = w0;
+            v[cnt++] = v0;
+        } else {
+            int k = 1;
+            while (k <= p0) {
+                w[cnt] = k * w0;
+                v[cnt++] = k * v0;
+                p0 -= k;
+                k *= 2;
+            }
+            if (p0 > 0) {
+                w[cnt] = p0 * w0;
+                v[cnt++] = p0 * v0;
+            }
+        }
+    }
+    for (int i = 1; i < cnt; i++) {
+        if(complete[i]) {
+            for(int j = w[i]; j <= W; j++) {
+                dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
+            }
+        } else {
+            for (int j = W; j >= w[i]; j--) {
+                dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
+            }
+        }
+    }
+    cout << dp[W] << endl;
+    return 0;
+}   /* created: 2024-09-28 20:48 author: Egrvigrf */
+```
+
+# 有依赖的背包
+[金明的预算方案](https://www.luogu.com.cn/problem/P1064)
+枚举可能的附件选择情况并转化为0-1背包，一个主键如果有k个附件则枚举2^k次
+
+```cpp
+const int N = 350000;
+const int M = 65;
+int dp[M][N];
+int king[M];
+int v[M];
+int cost[M];
+int fans[M];
+int follow[M][2];
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    int n, m;
+    cin >> n >> m;
+    for (int i = 1; i <= m; i++) {
+        int co, p, q;
+        cin >> co >> p >> q;
+        v[i] = co * p;
+        cost[i] = co;
+        king[i] = q;
+        if (q) {
+            follow[q][fans[q]++] = i; 
+        }
+    }
+    int p = 0;
+    for (int i = 1; i <= m; i++) {
+        if (king[i] != 0) continue;
+        int p1 = (fans[i] >= 1 ? follow[i][0] : -1);
+        int p2 = (fans[i] >= 2 ? follow[i][1] : -1);
+        for (int j = 0; j <= n; j++) {
+            dp[i][j] = dp[p][j]; // 不选主件
+            if (j - cost[i] >= 0) { //主
+                dp[i][j] = max(dp[i][j], dp[p][j - cost[i]] + v[i]);
+            }
+            if (p1 != -1 && j - cost[i] - cost[p1] >= 0) {
+                dp[i][j] = max(dp[i][j], dp[p][j - cost[i] - cost[p1]] + v[i] + v[p1]);
+            }
+            if (p2 != -1 && j - cost[i] - cost[p2] >= 0) {
+                dp[i][j] = max(dp[i][j], dp[p][j - cost[i] - cost[p2]] + v[i] + v[p2]);
+            }
+            if (p1 != -1 && p2 != -1 && j - cost[i] - cost[p1] - cost[p2] >= 0) {
+                dp[i][j] = max(dp[i][j], dp[p][j - cost[i] - cost[p1] - cost[p2]] + v[i] + v[p1] + v[p2]);
+            }
+        }
+        p = i;
+    }
+    cout<<dp[p][n];
+    return 0;
+}
+```
