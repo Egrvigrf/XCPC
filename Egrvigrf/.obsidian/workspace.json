@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "221fe4c969439e60",
+        "id": "c5a3683315bee614",
         "type": "tabs",
         "children": [
           {
-            "id": "d270a1e204d39f77",
+            "id": "d78a621682346dec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,12 +147,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d270a1e204d39f77",
+  "active": "d78a621682346dec",
   "lastOpenFiles": [
+    "笔记/数据结构/树/线段树.md",
+    "模板/打印稿.md",
     "笔记/DP/状压DP.md",
     "笔记/DP/背包DP.md",
     "笔记/博弈/组合博弈.md",
-    "模板/打印稿.md",
     "模板/计算几何.md",
     "题解/计算几何/house.md",
     "题解/计算几何",
@@ -180,7 +181,6 @@
     "笔记/基础.md",
     "笔记/数据结构/树状数组.md",
     "笔记/贪心/greedy.md",
-    "模板/对拍/compare.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",
