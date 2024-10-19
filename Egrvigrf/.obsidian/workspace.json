@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c5a3683315bee614",
+        "id": "cdb3ebd680c1f677",
         "type": "tabs",
         "children": [
           {
-            "id": "d78a621682346dec",
+            "id": "9faa9ad21a456207",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,11 +147,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d78a621682346dec",
+  "active": "9faa9ad21a456207",
   "lastOpenFiles": [
+    "笔记/其他/差分前缀和.md",
+    "笔记/其他/双指针.md",
+    "笔记/其他/滑动窗口.md",
+    "模板/打印稿.md",
     "笔记/数据结构/树/线段树.md",
     "笔记/数据结构/树/Huffman Tree.md",
-    "模板/打印稿.md",
     "笔记/DP/状压DP.md",
     "笔记/DP/背包DP.md",
     "笔记/博弈/组合博弈.md",
@@ -178,9 +181,6 @@
     "笔记/数论/素数.md",
     "笔记/数论/同余定理.md",
     "笔记/字符串/字符串哈希.md",
-    "笔记/其他/二分答案.md",
-    "笔记/基础.md",
-    "笔记/数据结构/树状数组.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",
