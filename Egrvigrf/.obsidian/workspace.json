@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模板/打印稿.md",
+                "file": "题解/单调栈/最大矩形.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/打印稿.md",
+                "file": "题解/单调栈/最大矩形.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/打印稿.md",
+                "file": "题解/单调栈/最大矩形.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模板/打印稿.md"
+                "file": "题解/单调栈/最大矩形.md"
               }
             }
           }
@@ -149,10 +149,12 @@
   },
   "active": "9faa9ad21a456207",
   "lastOpenFiles": [
+    "模板/打印稿.md",
+    "题解/单调栈/最大矩形.md",
+    "题解/单调栈",
     "笔记/其他/差分前缀和.md",
     "笔记/其他/双指针.md",
     "笔记/其他/滑动窗口.md",
-    "模板/打印稿.md",
     "笔记/数据结构/树/线段树.md",
     "笔记/数据结构/树/Huffman Tree.md",
     "笔记/DP/状压DP.md",
@@ -180,12 +182,10 @@
     "笔记/数论/快速幂.md",
     "笔记/数论/素数.md",
     "笔记/数论/同余定理.md",
-    "笔记/字符串/字符串哈希.md",
     "笔记/搜索/graph1.gif",
     "题解/DP/未命名",
     "笔记/字符串",
     "笔记/图论/最短路",
-    "笔记/图论/二分图",
     "笔记/算法/搜索/graph1.gif",
     "未命名.canvas",
     "未命名 1.canvas"
